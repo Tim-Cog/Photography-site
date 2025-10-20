@@ -1,0 +1,8 @@
+{
+	"images" : [
+		{"fileName" : "","imageInfo":"This is a nice Photo"}
+	],	
+	"videos" : [
+		{"fileName" : "","videoInfo":"This is a nice Video"}
+	]
+}

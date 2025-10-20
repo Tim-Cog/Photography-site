@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel = "stylesheet" href = "upload_image.css">
+		<title>
+			Upload Media
+		</title>
+	</head>
+	<body>
+		<div id = "parent">
+			<div id = "media-list">
+				<div id = "media-type-heading">
+					<span class = "type-headings">IMAGES</span>
+					<span class = "type-headings">VIDEOS</span>
+				</div>
+				<div id = "image-list"></div>
+				<div id = "add-or-delete">
+					<div id = "add-file">ADD</div>
+					<form id = "delete">
+						<input type = "submit" id = "delete-file" value = "DELETE"></input>
+					</form>
+				</div>
+			</div>
+			<div id = "media-preview">
+				<form id = "edit-info-form">
+					<div id = "legend"></div>
+					<textarea id = "media-info">Select A File to See and Edit The Info Attached</textarea>
+					<input type = "submit" id = "submit-info-edit" value = "UPDATE">
+				</form>
+			</div>
+		</div>
+
+		<!--This is the pop-up that will allow for uploading and deleting-->
+		<div id = "shroud"></div>
+		<div id = "upload-delete-pop-up">
+			<form id = "file-input-form">
+				<label for = "file-input">Select (a) new file(s) to upload</label><br>
+				<input type = "file" name = "file-input" id = "file-input" multiple>
+				<div id = "file-input-list"></div>
+				<input type = "submit" id = "submit-selection" value = "UPLOAD">
+			</form>
+		</div>
+
+	</body>
+	<script src = "upload_image.js"></script>
+	<script src = "uploader.js"></script>
+	<script src = "edit-file-info.js"></script>
+	<script src = "delete-file.js"></script>
+</html>

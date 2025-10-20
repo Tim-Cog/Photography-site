@@ -1,0 +1,158 @@
+*{
+	box-sizing : border-box;
+}
+
+#parent{
+	width : 100%;
+	height : 100vh;
+}
+
+#media-list{
+	height : 100vh;
+	width : 30%;
+	float : left;
+}
+
+#media-type-heading{
+	border-bottom : 1px solid black;
+}
+	
+.type-headings : nth-child(1){
+	float : left;
+}
+
+.type-headings : nth-child(2){
+	float : right;
+}
+
+#image-list{
+	height : 90%;
+	overflow-y : scroll;
+}
+
+.img-name-list{
+	color : blue;
+	padding-bottom : 1px;
+}
+
+.img-name-list:hover{
+	background-color : gray;
+	color : white;
+	cursor : pointer;
+}
+
+.img-name-list:active{
+	cursor : pointer;
+}
+
+#add-or-delete{
+	padding : 5%;
+}
+
+#add-or-delete > div {
+	float : left;
+	width : 50%;
+	text-align : center;
+	border-radius : 5px;
+	cursor : pointer;
+}
+
+#delete{
+	width : 50%;
+	float : left;
+}
+
+#add-file{
+	background-color : green;
+}
+
+#delete-file{
+	background-color : red;
+	width : 100%;
+}
+
+#media-preview{
+	border-left : 1px solid black;
+	height : 100vh;
+	float : right;
+	width : 70%;
+}
+
+
+#media-preview > img{
+	width : 100%;
+	height : 85%;
+	object-fit : contain;
+}
+
+#media-info{
+	width : 100%;
+	padding : 2%;
+}
+
+#legend{
+	position : relative;
+	top : 11px;
+	background-color : white;
+	width : fit-content;
+	margin-left : 5%;
+}
+
+#shroud{
+	display : none;
+	position : fixed;
+	width : 100vw;
+	height : 100vh;
+	background-color : white;
+	opacity : .5;
+	z-index : 2;
+	top : 0;
+}
+
+#upload-delete-pop-up{
+	display : none;
+	position : fixed;
+	border : 1px solid black;
+	width : 50vw;
+	height : 50vh;
+	overflow : scroll;
+	top : 25%;
+	left : 25%;
+	z-index : 3;
+	background-color : white;
+	padding : 3%;
+}
+
+
+#upload-delete-pop-up > form > label{
+	padding-bottom : 2%;
+}
+
+#file-input{
+	padding-top: 2%;
+	padding-bottom : 2%;
+	padding-left : 1%;
+}
+
+#file-input-list{
+	padding-top : 2%;
+	padding-bottom : 2%;
+	color : green;
+	font-family : mono;
+	font-weight : bold;
+}
+
+
+
+#file-input-list >div>div{
+	width : 100%;
+}
+
+
+#file-input-list >div>div>textarea{
+	width : 100%;
+}
+
+#submit-selection{
+	float : right;
+}
